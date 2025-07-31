@@ -4,8 +4,10 @@ getgenv().gagConfig = {
     CRAFT_EVENT = { "Anti Bee Egg"},
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     BUY_EVENT_SHOP = { "Zen Egg" },
-    MAX_EVENT_RESTOCK_SHECKLES = 250000000,
-   
+    MAX_EVENT_RESTOCK_SHECKLES = 1900000000,
+    PLACE_ALL_EVENT_STAFF = true,
+    FOCUS_KITSUNE_NPC = true,
+    
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
     EXTRA_PET_SLOTS = 5,
@@ -29,11 +31,11 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Tanuki", "Ostrich", "Capybara", "Tanchozuru", "Seal", "Kitsune", "Bald Eagle", "Fennec Fox", "Blood Kiwi", "Peacock", "Rooster", ["Hamster"] = 2, "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
+    KEEP_PETS = { ["Corrupted Kodama"] = 7, ["Kodama"] = 5, "Corrupted Kitsune", "Raiju", ["Starfish"] = 10, ["Capybara"] = 1, ["Tanchozuru"] = 2, ["Seal"] = 1, "Kitsune", "Bald Eagle", "Fennec Fox", "Blood Kiwi", "Rooster", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
     KEEP_PETS_WEIGHT = 10,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { "Starfish", ["Capybara"] = 1 },
+    EQUIP_PETS = { ["Starfish"] = 5, ["Kodama"] = 1, ["Capybara"] = 1},
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
@@ -41,10 +43,10 @@ getgenv().gagConfig = {
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
     SEED_WEBHOOK_URL = "", 
-    NOTIFY_PETS = { "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "T-Rex", "Red fox"},
-    NOTIFY_PETS_WEIGHT = 10,
-    DISCORD_ID = "473755357274046464",
-    WEBHOOK_NOTE = "dew",
+    NOTIFY_PETS = { "Corrupted Kitsune", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "T-Rex", "Red Fox"},
+    NOTIFY_PETS_WEIGHT = 6,
+    DISCORD_ID = "975746409007579207",
+    WEBHOOK_NOTE = "pvt",
     SHOW_WEBHOOK_USERNAME = true,
 } 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
