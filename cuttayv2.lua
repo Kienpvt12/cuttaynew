@@ -14,7 +14,7 @@ getgenv().gagConfig = {
     ADD_FRIEND = true,
     FAST_LEVEL_PET = true,
 
-    MAX_PLANTS = 220,
+    MAX_PLANTS = 200,
     DESTROY_UNTIL_MIN_PLANTS = 150,
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple" },
     
@@ -48,3 +48,4 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_USERNAME = true,
 } 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
+
