@@ -14,9 +14,10 @@ getgenv().gagConfig = {
     ADD_FRIEND = true,
     FAST_LEVEL_PET = true,
 
-    MAX_PLANTS = 200,
+    MAX_PLANTS = 220,
     DESTROY_UNTIL_MIN_PLANTS = 150,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower" },
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
+    LIMIT_PLANT_SEED = { ["Strawberry"] = 1, ["Blueberry"] = 1, ["Apple"] = 1, ["Tomato"] = 2, ["Corn"] = 1, ["Coconut"] = 3, ["Pumpkin"] = 3, ["Watermelon"] = 2, ["Pepper"] = 3 },
     
     BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20},
     PLANT_EGGS = { "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Summer Egg" },
@@ -33,7 +34,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 10,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Capybara"] = 1, ["Mochi Mouse"] = 1, "Starfish" },
+    EQUIP_PETS = { ["Capybara"] = 1,  "Starfish" },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
@@ -48,6 +49,7 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_USERNAME = true,
 } 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
+
 
 
 
