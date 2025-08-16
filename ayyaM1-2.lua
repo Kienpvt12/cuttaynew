@@ -1,53 +1,32 @@
-wait(5)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
 	NoDeletePlayer = false,
 
 	["Block Pet Gift"] = true,
- 
+
 	Collect_Cooldown = 60, -- cooldown to collect fruit
 	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
 
-	["Rejoin When Update"] = false,
+	["Rejoin When Update"] = true,
 	["Limit Tree"] = {
 		["Limit"] = 200,
-		["Destroy Untill"] = 150,
+		["Destroy Until"] = 180,
 
 		["Safe Tree"] = {
-			"Tranquil Bloom",
-			"Maple Apple",
-			"Moon Mango",
-			"Bone Blossom",
+			"Moon Blossom",
 			"Fossilight",
-      		        "Serenity",
-
 		}
 	},
 
 	Seed = {
 		Buy = {
-			Mode = "Custom", -- Custom , Auto
-			Custom = {
-				"Tomato",
-				"Strawberry",
-				"Bell Pepper",
-				"Blood Banana",
-				"Onion",
-				"Pear",
-				"Grape",
-				"Mushroom",
-				"Pepper",
-				"Cacao",
-				"Beanstalk",
-				"Ember Lily",
-				"Sugar Apple",
-				"Burning Bud",
-				"Giant Pinecone",
-				"Elder Strawberry",
+			Mode = "Auto", -- Custom , Auto
+			Custom = { -- any fruit u need to place
+				"Carrot",
 			}
 		},
 		Place = {
@@ -56,11 +35,14 @@ getgenv().ConfigsKaitun = {
 				"Carrot"
 			},
 			Lock = {
+				"Maple Apple",
 				"Sunflower",
 				"Dragon Pepper",
 				"Elephant Ears",
 				"Moon Melon",
+				"Easter Egg",
 				"Moon Mango",
+				"Bone Blossom",
 				"Fossilight",
 			}
 		}
@@ -73,19 +55,23 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Events = {
-		["Cook Event"] = {
-			Minimum_Money = 30_000_000, -- minimum money to start play this event
-			Rewards_Item = { "Culinarian Chest", "Gourmet Egg", "Gorilla Chef", "Sunny-Side Chicken", "Cooking Cauldron", "Pet Shard Aromatic", "Gourmet Seed Pack", "Bitter Melon Seed", "Pricklefruit Seed", "Butternut Squash Seed", "Spring Onion Seed", "Kitchen Crate", "Kitchen Flooring", "Kitchen Cart", "Smoothie Fountain" }
+		["Bean Event"] = {
+			Minimum_Money = 10_000_000, -- minimum money to start play this event
+		},
+		Shop = { -- delete -- to buy
+			"Sprout Seed Pack",
+			"Sprout Egg",
+			-- "Mandrake",
+			"Silver Fertilizer",
+			-- "Canary Melon",
+			-- "Amberheart",
+			"Spriggan",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
 		},
 		Craft = {
 			"Anti Bee Egg",
-		},
-		Shop = {
-			"Zen Egg",
-			"Koi",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -97,10 +83,9 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
-			"Levelup Lollipop",
+			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
-			"Trading Ticket",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -108,13 +93,12 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
-			"Levelup Lollipop",
-			"Trading Ticket",
 		},
 	},
 
 	Eggs = {
 		Place = {
+			"Sprout Egg",
 			"Gourmet Egg",
 			"Zen Egg",
 			"Primal Egg",
@@ -126,25 +110,22 @@ getgenv().ConfigsKaitun = {
 			"Paradise Egg",
 			"Bee Egg",
 			"Mythical Egg",
-			"Rare Summer Egg",
-			"Common Summer Egg",
-			"Common Egg",
 		},
 		Buy = {
+			"Sprout Egg",
+			"Gourmet Egg",
 			"Bee Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
 			"Night Egg",
-			["Rare Summer Egg"] = 20,
 			"Bug Egg",
 			"Mythical Egg",
-			"Common Summer Egg",
 		}
 	},
 
-    Pets = {
-        ["Start Delete Pet At"] = 45,
+	Pets = {
+		["Start Delete Pet At"] = 45,
         ["Upgrade Slot"] = {
             ["Pet"] = {
                 ["Starfish"] = { 4, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
@@ -155,8 +136,9 @@ getgenv().ConfigsKaitun = {
                 ["Starfish"] = { 3, 100, 2 },
             },
         },
-        Favorite_LockedPet = true,
-        Locked_Pet_Age = 76, -- pet that age > 60 will lock
+		Unfavorite_AllPet = false,
+		Favorite_LockedPet = true,
+		 Locked_Pet_Age = 76, -- pet that age > 60 will lock
         Locked = {
 			["Sushi Bear"] = 5,
 			"Golden Goose",
@@ -190,30 +172,38 @@ getgenv().ConfigsKaitun = {
         LockPet_Weight = 5, -- if Weight >= 10 they will locked
     },
 
-
-    Webhook = {
+	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
-		UrlSeed = "XXX",
-		PcName = "LUCKY-AYAYA",
+		UrlSeed = "",
+		PcName = "PVT",
+
+		Mention = "", -- discord id
 
 		Noti = {
 			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
 			},
 			SeedPack = {
 				"Idk"
 			},
 			Pets = {
+				"Lobster Thermidor",
+				"Golden Goose",
 				"French Fry Ferret",
-                "Lobster Thermidor",
+				"Corrupted Kitsune",
+				"Kitsune",
+				"Spinosaurus",
+				"T-Rex",
 				"Disco Bee",
-		        "Corrupted Kitsune",
 				"Butterfly",
 				"Mimic Octopus",
 				"Queen Bee",
-				"Dragonfly",
-				"Kitsune",
-				"Raccoon",
 				"Fennec Fox",
+				"Dragonfly",
+				"Raccoon",
+				"Red Fox",
 			},
 			Pet_Weight_Noti = true,
 		}
@@ -221,7 +211,3 @@ getgenv().ConfigsKaitun = {
 }
 License = "8xGBxxJlHuPLdS1c2sW50enf54WzHG6L"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
-
-
-
-
