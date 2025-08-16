@@ -159,9 +159,13 @@ getgenv().ConfigsKaitun = {
         Locked_Pet_Age = 76, -- pet that age > 60 will lock
         Locked = {
 			["Sushi Bear"] = 5,
+			"Golden Goose",
+			["Golem"] = 5,
+			["Sapling"] = 5,
+			["Jackalope"] = 5,
 			"Lobster Thermidor",
             ["Gorilla Chef"] = 8,
-        	["Sunny-Side Chicken"] = 30,
+        	["Sunny-Side Chicken"] = 25,
             ["Junkbot"] = 4,
             "French Fry Ferret",
             ["Spaghetti Sloth"] = 1,
@@ -216,4 +220,5 @@ getgenv().ConfigsKaitun = {
 }
 License = "8xGBxxJlHuPLdS1c2sW50enf54WzHG6L"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
