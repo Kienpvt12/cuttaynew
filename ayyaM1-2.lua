@@ -161,7 +161,7 @@ getgenv().ConfigsKaitun = {
 			["Sushi Bear"] = 5,
 			"Lobster Thermidor",
             ["Gorilla Chef"] = 8,
-        	["Sunny-Side Chicken"] = 20,
+        	["Sunny-Side Chicken"] = 30,
             ["Junkbot"] = 4,
             "French Fry Ferret",
             ["Spaghetti Sloth"] = 1,
@@ -216,3 +216,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "8xGBxxJlHuPLdS1c2sW50enf54WzHG6L"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
