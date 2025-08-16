@@ -14,8 +14,8 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 150,
-		["Destroy Untill"] = 135,
+		["Limit"] = 200,
+		["Destroy Untill"] = 150,
 
 		["Safe Tree"] = {
 			"Tranquil Bloom",
@@ -23,7 +23,7 @@ getgenv().ConfigsKaitun = {
 			"Moon Mango",
 			"Bone Blossom",
 			"Fossilight",
-			"Serenity",
+      		        "Serenity",
 
 		}
 	},
@@ -85,6 +85,7 @@ getgenv().ConfigsKaitun = {
 		},
 		Shop = {
 			"Zen Egg",
+			"Koi",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -104,6 +105,8 @@ getgenv().ConfigsKaitun = {
 		Lock = {
 			"Master Sprinkler",
 			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
 			"Lightning Rod",
 			"Levelup Lollipop",
 			"Trading Ticket",
@@ -125,6 +128,7 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 			"Rare Summer Egg",
 			"Common Summer Egg",
+			"Common Egg",
 		},
 		Buy = {
 			"Bee Egg",
@@ -135,9 +139,7 @@ getgenv().ConfigsKaitun = {
 			["Rare Summer Egg"] = 20,
 			"Bug Egg",
 			"Mythical Egg",
-			["Common Summer Egg"] = 20,
-			["Common Egg"] = 40,
-			"Zen Egg",
+			"Common Summer Egg",
 		}
 	},
 
@@ -188,10 +190,11 @@ getgenv().ConfigsKaitun = {
         LockPet_Weight = 5, -- if Weight >= 10 they will locked
     },
 
+
     Webhook = {
-		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
+		UrlPet = "https://discord.com/api/webhooks/1386629644140417145/rXZ-L2AWqC2p-dzbGULNBLoKmQiJ7tvUrPIhsFT5DcysdOvid77952-1jVKi4hOiq0qs",
 		UrlSeed = "XXX",
-		PcName = "DOICONCAK",
+		PcName = "LUCKY-AYAYA",
 
 		Noti = {
 			Seeds = {
