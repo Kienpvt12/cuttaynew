@@ -32,7 +32,7 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {}, -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {}, -- Stop Harvest
 
-    KEEP_PETS = { ["Sushi Bear"] = 5, "Golden Goose", ["Golem"] = 5, ["Sapling"] = 5, ["Jackalope"] = 5, "Lobster Thermidor", ["Gorilla Chef"] = 8, ["Sunny-Side Chicken"] = 25, ["Junkbot"] = 4, "French Fry Ferret", ["Spaghetti Sloth"] = 1, "Kodama", "Spriggan", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 8, ["Capybara"] = 1, ["Tanchozuru"] = 1, ["Seal"] = 1, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
+    KEEP_PETS = { ["Sushi Bear"] = 5, "Golden Goose", ["Golem"] = 5, ["Sapling"] = 5, "Lobster Thermidor", ["Gorilla Chef"] = 8, ["Sunny-Side Chicken"] = 25, ["Junkbot"] = 4, "French Fry Ferret", ["Spaghetti Sloth"] = 1, "Kodama", "Spriggan", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 8, ["Capybara"] = 1, ["Tanchozuru"] = 1, ["Seal"] = 1, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
@@ -52,4 +52,5 @@ getgenv().gagConfig = {
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/18f68a241a8acc1191c28d9a76d67fe3.lua"))()
+
 
