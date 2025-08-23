@@ -3,7 +3,7 @@ setfpscap(3)
 
 getgenv().gagConfig = {
     -- Event:
-    CRAFT_EVENT = { "Anti Bee Egg" },
+    CRAFT_EVENT = { "Anti Bee Egg", "Skyroot Chest" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     MAX_EVENT_RESTOCK_SHECKLES = 10_000_000_000_000, -- Restock stop at 48m
     BUY_EVENT_SHOP = { "Sprout Egg", "Spriggan" },
@@ -53,5 +53,6 @@ getgenv().gagConfig = {
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/18f68a241a8acc1191c28d9a76d67fe3.lua"))()
+
 
 
