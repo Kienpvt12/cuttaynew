@@ -3,7 +3,7 @@ setfpscap(3)
 
 getgenv().gagConfig = {
     -- Event:
-    CRAFT_EVENT = { "Anti Bee Egg" },
+    CRAFT_EVENT = { "Anti Bee Egg", "Skyroot Chest" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Primal Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     MAX_EVENT_RESTOCK_SHECKLES = 10_000_000_000_000, -- Restock stop at 48m
     BUY_EVENT_SHOP = { "Sprout Egg", "Spriggan" },
@@ -32,9 +32,9 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {}, -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {}, -- Stop Harvest
 
-    KEEP_PETS = { ["Sushi Bear"] = 5, "Golden Goose", ["Golem"] = 5, ["Sapling"] = 5, "Lobster Thermidor", ["Sunny-Side Chicken"] = 25, ["Junkbot"] = 4, "French Fry Ferret", "Kodama", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 6, ["Capybara"] = 1, ["Seal"] = 3, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
+    KEEP_PETS = { ["Mandrake"] = 2, "Griffin", "Chicken Zombie", "Peach Wasp", "Lemon Lion", "Apple Gazelle", "Green Bean", ["Sushi Bear"] = 5, "Golden Goose", ["Golem"] = 2, ["Sapling"] = 5, "Lobster Thermidor", ["Sunny-Side Chicken"] = 25, "French Fry Ferret", "Kodama", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 6, ["Capybara"] = 1, ["Seal"] = 3, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
     KEEP_PETS_WEIGHT = 5,
-    KEEP_PETS_WEIGHT = 5,
+    KEEP_PETS_AGE = 75,
 
     -- EQUIP_PETS Priority (Left -> Right)
     EQUIP_PETS = { ["Starfish"] = 2, ["Capybara"] = 1 },
@@ -53,4 +53,6 @@ getgenv().gagConfig = {
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/18f68a241a8acc1191c28d9a76d67fe3.lua"))()
+
+
 
