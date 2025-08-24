@@ -37,7 +37,6 @@ getgenv().gagConfig = {
     -- EQUIP_PETS Priority (Left -> Right)
     EQUIP_PETS = { ["Lemon Lion"] = 1, ["Orange Tabby"] = 2 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Orange Tabby" },
-    -- con cac
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Grandmaster Sprinkler", "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
