@@ -21,8 +21,8 @@ getgenv().gagConfig = {
     DESTROY_UNTIL_MIN_PLANTS = 200,
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
     
-    BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20, "Uncommon Egg", ["Rare Egg"] = 99},
-    PLANT_EGGS = { "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Summer Egg" },
+    BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20, ["Legendary"] = 20, "Uncommon Egg", ["Common"] = 20, ["Rare Egg"] = 99},
+    PLANT_EGGS = { "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Legendary","Common Summer Egg", "Rare Summer Egg", "Common" },
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Romanesco", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
@@ -35,8 +35,8 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Lemon Lion"] = 1, ["Orange Tabby"] = 2 },
-    USE_PETS_FOR_UPGRADE_SLOT = { "Orange Tabby" },
+    EQUIP_PETS = { ["Lemon Lion"] = 1, ["Grey Mous"] = 2, ["Orange Tabby"] = 2 },
+    USE_PETS_FOR_UPGRADE_SLOT = { "Grey Mous", "Orange Tabby" },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Grandmaster Sprinkler", "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
