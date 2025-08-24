@@ -7,7 +7,6 @@ getgenv().gagConfig = {
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg" },
     MAX_EVENT_RESTOCK_SHECKLES = 5_000_000_000_000,  -- Restock stop at..
     BUY_EVENT_SHOP = { "Sprout Egg", "Spriggan", "Skyroot Chest", "Sprout Seed Pack" },
-    PLACE_COSMETIC = { "Cooking Kit" },
 
     -- General:
     AUTO_UPDATE_RESTART = false,
@@ -22,7 +21,7 @@ getgenv().gagConfig = {
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
     
     BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20, ["Legendary"] = 20, "Uncommon Egg", ["Common"] = 20, ["Rare Egg"] = 99},
-    PLANT_EGGS = { "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Legendary", "Common Summer Egg", "Rare Summer Egg", "Common" },
+    PLANT_EGGS = { ["Sprout Egg"] = 1. "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Legendary", "Common Summer Egg", "Rare Summer Egg", "Common" },
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Romanesco", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
