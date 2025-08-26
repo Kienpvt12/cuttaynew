@@ -21,7 +21,7 @@ getgenv().gagConfig = {
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
     
     BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20, "Uncommon Egg", ["Rare Egg"] = 99},
-    PLANT_EGGS = { "Sprout Egg", "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Summer Egg" },
+    PLANT_EGGS = { "Rare Egg", "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Summer Egg" },
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Romanesco", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
@@ -30,7 +30,7 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { ["Mandrake"] = 2, "Griffin", "Chicken Zombie", "Peach Wasp", "Lemon Lion", "Apple Gazelle", "Green Bean", "Golden Goose", ["Golem"] = 2, ["Spaghetti Sloth"] = 2, ["Gorilla Chef"] =2, ["Rooster"] = 5, ["Sapling"] = 5, "Lobster Thermidor", ["Sunny-Side Chicken"] = 30, "French Fry Ferret", "Kodama", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 4, ["Capybara"] = 1, ["Seal"] = 3, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
+    KEEP_PETS = { "Griffin", "Chicken Zombie", "Peach Wasp", "Lemon Lion", "Apple Gazelle", "Green Bean", "Golden Goose", ["Golem"] = 2, ["Spaghetti Sloth"] = 2, ["Gorilla Chef"] =2, ["Rooster"] = 5, ["Sapling"] = 5, "Lobster Thermidor", ["Sunny-Side Chicken"] = 30, "French Fry Ferret", "Kodama", "Corrupted Kitsune", "Nihonzaru", ["Starfish"] = 4, ["Capybara"] = 1, ["Seal"] = 3, "Kitsune", "Blood Kiwi", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
@@ -50,4 +50,5 @@ getgenv().gagConfig = {
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/18f68a241a8acc1191c28d9a76d67fe3.lua"))()
+
 
