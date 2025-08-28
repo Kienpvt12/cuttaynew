@@ -25,7 +25,7 @@ getgenv().gagConfig = {
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Romanesco", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
-    KEEP_SEEDS = { "Grand Tomato", "King Cabbage", "Bone Blossom" },
+    KEEP_SEEDS = { "Sprout Egg", "Grand Tomato", "King Cabbage", "Bone Blossom" },
     
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
@@ -34,7 +34,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { ["Lemon Lion"] = 1, ["Grey Mous"] = 2, ["Brown Mouse"] = 2, ["Orange Tabby"] = 2, ["Golden Lab"] = 2, ["Dog"] =2, ["Bunny"] = 2 },
+    EQUIP_PETS = { ["Rooster"] = 3},
     USE_PETS_FOR_UPGRADE_SLOT = { "Grey Mous", "Orange Tabby", "Bunny", "Dog", "Golden Lab" },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
