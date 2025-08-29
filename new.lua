@@ -21,11 +21,11 @@ getgenv().gagConfig = {
     DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower", "Apple", "Coconut" },
     
     BUY_EGGS = {"Mythical Egg", "Bug Egg", "Bee Egg", "Paradise Egg", ["Common Summer Egg"] = 20, ["Rare Summer Egg"] = 20, ["Legendary"] = 20, "Uncommon Egg", ["Common"] = 20, ["Rare Egg"] = 99},
-    PLANT_EGGS = { "Rare Egg", "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Legendary", "Common Summer Egg", "Rare Summer Egg", "Common" },
+    PLANT_EGGS = { "Sprout Egg" ,"Rare Egg", "Gourmet Egg", "Zen Egg", "Anti Bee Egg", "Primal Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Legendary", "Common Summer Egg", "Rare Summer Egg", "Common" },
     
     -- BUY_SEED_SHOP Priority (Left -> Right)
     BUY_SEED_SHOP = { "Romanesco", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
-    KEEP_SEEDS = { "Sprout Egg", "Grand Tomato", "King Cabbage", "Bone Blossom" },
+    KEEP_SEEDS = { "Grand Tomato", "King Cabbage", "Bone Blossom" },
     
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
