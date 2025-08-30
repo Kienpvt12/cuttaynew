@@ -34,7 +34,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = {["Starfish"] = 3},
+    EQUIP_PETS = {["Starfish"] = 3, ["Rooster"] = 4},
     USE_PETS_FOR_UPGRADE_SLOT = {"Starfish", "Grey Mous", "Orange Tabby", "Bunny", "Dog", "Golden Lab" },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
