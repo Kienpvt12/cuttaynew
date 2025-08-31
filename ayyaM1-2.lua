@@ -108,6 +108,7 @@ getgenv().ConfigsKaitun = {
 				"Enchanted Egg",
 				"FairyPoints",
 				"Enchanted Seed Pack",
+				"Fairy Targeter",
 			},
 			Upgrade = {
 				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
@@ -302,3 +303,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "hLv5vGDrHC1cR2eyIaPkonhV0CmU0L12"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
