@@ -51,4 +51,20 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_USERNAME = true,
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a2234a9cfbe480dfed9eaf6c00a012ca.lua"))()
+wait(2)
+local function spawnFairy()
+    local args = {
+        [1] = "Create",
+        [2] = CFrame.new(48.2427978515625, 4.10860538482666, -96.31572723388672)
+            * CFrame.Angles(-0.7686175107955933, -1.0235295295715332, -0.6902524828910828)
+    }
+    ReplicatedStorage.GameEvents.FairyTargeterService:FireServer(unpack(args))
+end
+
+spawn(function()
+    while true do
+        spawnFairy()
+        task.wait(120) -- 120 giây
+    end
+end)
 
