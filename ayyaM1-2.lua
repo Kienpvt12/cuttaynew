@@ -233,7 +233,8 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Cockatrice",
 			["Imp"] = 2,
- 			["Glimmering Sprite"] = 8,
+			["Pixie"] =2,
+ 			"Glimmering Sprite",
  			"Griffin",
  			"Chicken Zombie",
  			"Peach Wasp",
@@ -303,4 +304,5 @@ getgenv().ConfigsKaitun = {
 }
 License = "hLv5vGDrHC1cR2eyIaPkonhV0CmU0L12"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
