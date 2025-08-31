@@ -108,6 +108,7 @@ getgenv().ConfigsKaitun = {
 				"Enchanted Egg",
 				"FairyPoints",
 				"Enchanted Seed Pack",
+				"Fairy Targeter",
 			},
 			Upgrade = {
 				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
