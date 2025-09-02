@@ -200,8 +200,6 @@ getgenv().ConfigsKaitun = {
 			"Rare Summer Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Uncommon Egg",
-			"Common Egg",
 			"Legendary Egg",
 			"Rare Egg",
 		}
@@ -316,4 +314,5 @@ while true do
     end
     wait(30) -- lặp lại sau 60 giây
 end
+
 
