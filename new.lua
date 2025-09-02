@@ -200,8 +200,6 @@ getgenv().ConfigsKaitun = {
 			"Rare Summer Egg",
 			"Bug Egg",
 			"Mythical Egg",
-			"Uncommon Egg",
-			"Common Egg",
 			"Legendary Egg",
 			"Rare Egg",
 		}
@@ -230,14 +228,11 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Cockatrice",
-			["Imp"] = 2,
-			["Pixie"] =2,
  			"Glimmering Sprite",
  			"Griffin",
  			"Chicken Zombie",
  			"Peach Wasp",
  			"Lemon Lion",
- 			"Green Bean",
  			"Golden Goose",
  			["Golem"] = 2,
  			["Rooster"] = 5,
