@@ -128,7 +128,7 @@ getgenv().ConfigsKaitun = {
 				}
 			}
 		},
-		MaxMoney_Restocks = 10_000_000,
+		MaxMoney_Restocks = 5_000_000_000_000,
 		Shop = { -- un comment to buy
 			"Enchanted Chest",
 			"Pet Shard Glimmering",
@@ -483,3 +483,4 @@ while task.wait(60) do
         craftChest()
     end
 end
+
