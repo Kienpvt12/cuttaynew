@@ -5,7 +5,7 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 120, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -25,7 +25,7 @@ getgenv().ConfigsKaitun = {
 
 	["Limit Tree"] = {
 		["Limit"] = 250,
-		["Destroy Until"] = 250,
+		["Destroy Until"] = 220,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -38,41 +38,41 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 			"Princess Thorn",
 			-- for the event
-			["Bamboo"] = 10,
-			["Coconut"] = 5,
-			["Mushroom"] = 5,
-			["Glowthorn"] = 5,
-			["Tomato"] = 5,
-			["Pumpkin"] = 5,
-			["Pepper"] = 5,
-			["Cacao"] = 5,
-			["Apple"] = 5,
-			["Romanesco"] = 10,
-			["Elder Strawberry"] = 10,
-			["Burning Bud"] = 10,
-			["Giant Pinecone"] = 5,
-			["Corn"] = 5,
-			["Sugar Apple"] = 5,
-			["Ember Lily"] = 5,
-			["Dragon Fruit"] = 5,
-			["Sunbulb"] = 5,
-			["Orange Tulip"] = 10,
-			["Blueberry"] = 5,
-			["Watermelon"] = 5,
-			["Mango"] = 5,
-			["Cactus"] = 5,
-			["Strawberry"] = 5,
-			["Beanstalk"] = 10,
-			["Lightshoot"] = 5,
-			["Grape"] = 5,
-			["Daffodil"] = 5,
+			Bamboo = 4,
+			Coconut = 4,
+			Mushroom = 4,
+			Glowthorn = 4,
+			Tomato = 4,
+			Pumpkin = 4,
+			Pepper = 4,
+			Cacao = 4,
+			Apple = 4,
+			Romanesco = 4,
+			["Elder Strawberry"] = 4,
+			["Burning Bud"] = 4,
+			["Giant Pinecone"] = 4,
+			Corn = 4,
+			["Sugar Apple"] = 4,
+			["Ember Lily"] = 4,
+			["Dragon Fruit"] = 4,
+			Sunbulb = 8,
+			["Orange Tulip"] = 4,
+			Blueberry = 4,
+			Watermelon = 4,
+			Mango = 4,
+			Cactus = 4,
+			Strawberry = 4,
+			Beanstalk = 4,
+			Lightshoot = 4,
+			Grape = 4,
+			Daffodil = 4,
 		}
 	},
 
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
+			Custom = { -- any seed u need to buy
 				"Carrot",
 			}
 		},
@@ -97,18 +97,20 @@ getgenv().ConfigsKaitun = {
 
 	["Seed Pack"] = {
 		Locked = {
-
+			"Enchanted Seed Pack",
 		}
 	},
 
 	Events = {
 		["Fairy Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = {
+			Rewards_Item = { -- top mean select first
+				"Pet Shard Glimmering",
 				"Enchanted Egg",
+				"Mutation Spray Glimmering",
 				"FairyPoints",
-				"Enchanted Seed Pack",
 				"Fairy Targeter",
+				"Enchanted Seed Pack",
 			},
 			Upgrade = {
 				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
@@ -119,36 +121,45 @@ getgenv().ConfigsKaitun = {
 					"Fairy Event Duration",
 				},
 				Limit = {
-					["Glimmer Multiplier"] = 10, -- max 10
-					["Loose Fairy Spawn Amount"] = 4, -- max 4
+					["Glimmer Multiplier"] = 5, -- max 10
+					["Loose Fairy Spawn Amount"] = 10, -- max 10
 					["Fairy Event Duration"] = 10, -- max 10
 					["Fairy Spawn Amount"] = 9, -- max 9
 				}
 			}
 		},
-		MaxMoney_Restocks = 50_000_000_000_000,
+		MaxMoney_Restocks = 10_000_000,
 		Shop = { -- un comment to buy
+			"Enchanted Chest",
+			"Pet Shard Glimmering",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
+			-- "Drake",
+
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
-			-- "Silver Fertilizer",
+			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			-- ["Spriggan"] = 8,
+			["Spriggan"] = 8,
 			-- Friend Shop
-			"Sprout Egg",
 			"Skyroot Chest",
 			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Paradise Egg",
+			"Paradise Egg", 
 			"Rare Summer Egg", 
-			"Common Summer Egg",
+			"Common Summer Egg"
 		},
 		Craft = {
+			"Enchanted Chest",
+			"Fairy Net",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
 			"Anti Bee Egg",
-			"Skyroot Chest",
+			"Pet Shard GiantBean",
 			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
@@ -164,6 +175,7 @@ getgenv().ConfigsKaitun = {
 			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
+			"Harvest Tool",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -261,7 +273,13 @@ getgenv().ConfigsKaitun = {
  			"Mimic Octopus",
  			"Red Fox",
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked
+		Ignore_Pet_Weight = {
+			"NAME oF PET THAT U DONT NEED LOCK",
+		},
+		Instant_Sell = {
+			"NAME oF SOMETHING",
+		}
 	},
 
 	Webhook = {
@@ -281,9 +299,11 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
+				"Phoenix",
+				"Cockatrice",
 				"Golden Goose",
 				"French Fry Ferret",
-				"Cockatrice",
+				"Corrupted Kitsune",
 				"Kitsune",
 				"Spinosaurus",
 				"T-Rex",
@@ -316,11 +336,150 @@ while true do
     end
     wait(30) -- lặp lại sau 60 giây
 end
+-- 🌟 Auto Harvest Sunbulb + Auto Craft Seed Pack/Chest
+local Players = game:GetService("Players")
+local Rep = game:GetService("ReplicatedStorage")
+local CollectionService = game:GetService("CollectionService")
 
+local localPlayer = Players.LocalPlayer
+local DataService = require(Rep.Modules.DataService)
 
+local CollectRemote = Rep.GameEvents.Crops.Collect
+local SubmitFairy = Rep.GameEvents.FairyService.SubmitFairyFountainAllPlants
+local CraftRemote = Rep.GameEvents.CraftingGlobalObjectService
+local bench = workspace.Interaction.UpdateItems.FairyGenius.FairyWorldCraftingWorkBench
 
+-- ⚙️ Config
+local INTERVAL = 50      -- giây giữa mỗi vòng harvest
+local LIMIT = 20         -- số trái Sunbulb tối đa mỗi vòng
+local FIRE_DELAY = 2     -- delay giữa các lần thu hoạch
+local SUBMIT_DELAY = 1   -- delay giữa 2 lần submit
+local USE_FARM_ONLY = true -- true = chỉ quét farm của bạn
 
+-- Farm folder
+local farmFolder
+pcall(function()
+    if workspace:FindFirstChild("Farm") and workspace.Farm:FindFirstChild("Farm") then
+        farmFolder = workspace.Farm.Farm
+    end
+end)
 
+-- Kiểm tra CollectPrompt tag
+local function hasCollectTag(obj)
+    if type(obj.HasTag) == "function" then
+        local ok, res = pcall(function()
+            return obj:HasTag("CollectPrompt")
+        end)
+        if ok then return res end
+    end
+    return CollectionService:HasTag(obj, "CollectPrompt")
+end
 
+-- ✅ Hàm thu hoạch Sunbulb
+local function harvestSunbulb(limit)
+    local collected = 0
+    local descendants = USE_FARM_ONLY and farmFolder:GetDescendants() or workspace:GetDescendants()
 
+    for _, inst in ipairs(descendants) do
+        if inst:IsA("ProximityPrompt") and hasCollectTag(inst) then
+            local crop = inst.Parent and inst.Parent.Parent
+            if crop and crop.Name == "Sunbulb" then
+                CollectRemote:FireServer({ crop })
+                task.wait(FIRE_DELAY)
 
+                -- Submit ngay sau mỗi trái
+                SubmitFairy:FireServer()
+                task.wait(SUBMIT_DELAY)
+                SubmitFairy:FireServer()
+
+                collected += 1
+                if collected >= limit then break end
+            end
+        end
+    end
+    return collected
+end
+
+-- 🔑 Lấy UUID từ Backpack/Character
+local function getUUID(itemName)
+    for _, item in ipairs(localPlayer.Backpack:GetChildren()) do
+        if string.find(item.Name, itemName) then
+            return item:GetAttribute("c")
+        end
+    end
+    for _, item in ipairs(localPlayer.Character:GetChildren()) do
+        if string.find(item.Name, itemName) then
+            return item:GetAttribute("c")
+        end
+    end
+    return nil
+end
+
+-- Đếm số lượng item trong Backpack
+local function countItem(itemName)
+    local count = 0
+    for _, item in ipairs(localPlayer.Backpack:GetChildren()) do
+        if string.find(item.Name, itemName) then
+            count += 1
+        end
+    end
+    return count
+end
+
+-- 🧪 Craft Enchanted Seed Pack
+local function craftSeedPack()
+    CraftRemote:FireServer("SetRecipe", bench, "FairyWorldCraftingWorkBench", "Enchanted Seed Pack")
+
+    local items = {
+        {slot = 1, Name = "Mushroom Seed", Type = "Seed"},
+        {slot = 2, Name = "Mushroom Seed", Type = "Seed"},
+    }
+
+    for _, v in ipairs(items) do
+        local uuid = getUUID(v.Name)
+        if uuid then
+            CraftRemote:FireServer("InputItem", bench, "FairyWorldCraftingWorkBench", v.slot, {
+                ItemType = v.Type,
+                ItemData = {UUID = uuid}
+            })
+        end
+    end
+
+    CraftRemote:FireServer("Craft", bench, "FairyWorldCraftingWorkBench")
+end
+
+-- 🧰 Craft Enchanted Chest
+local function craftChest()
+    CraftRemote:FireServer("SetRecipe", bench, "FairyWorldCraftingWorkBench", "Enchanted Chest")
+
+    local items = {
+        {slot = 1, Name = "Sunbulb", Type = "Holdable"},
+        {slot = 2, Name = "Enchanted Seed Pack", Type = "Seed Pack"},
+        {slot = 3, Name = "Enchanted Egg", Type = "PetEgg"},
+    }
+
+    for _, v in ipairs(items) do
+        local uuid = getUUID(v.Name)
+        if uuid then
+            CraftRemote:FireServer("InputItem", bench, "FairyWorldCraftingWorkBench", v.slot, {
+                ItemType = v.Type,
+                ItemData = {UUID = uuid}
+            })
+        end
+    end
+
+    CraftRemote:FireServer("Craft", bench, "FairyWorldCraftingWorkBench")
+end
+
+-- 🔄 Main loop
+while task.wait(60) do
+    -- Thu hoạch Sunbulb mỗi vòng
+    harvestSunbulb(LIMIT)
+
+    -- Craft theo logic
+    if countItem("Enchanted Seed Pack") < 1 then
+        craftSeedPack()
+    else
+        craftChest()
+    end
+end
