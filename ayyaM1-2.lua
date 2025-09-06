@@ -178,6 +178,7 @@ getgenv().ConfigsKaitun = {
 		Place = {
 			"Gourmet Egg",
 			"Enchanted Egg",
+			"Rare Egg",
 			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
@@ -312,6 +313,7 @@ while true do
     end
     wait(30) -- lặp lại sau 60 giây
 end
+
 
 
 
