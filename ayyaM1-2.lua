@@ -1,4 +1,4 @@
-Luminous Spritegetgenv().ConfigsKaitun = {
+getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
 	NoDeletePlayer = false,
@@ -599,4 +599,3 @@ task.spawn(function()
         print('💎 Đã mua Enchanted Chest x2!')
     end
 end)
-
