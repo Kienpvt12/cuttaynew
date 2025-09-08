@@ -1,4 +1,4 @@
-getgenv().ConfigsKaitun = {
+Luminous Spritegetgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
 	NoDeletePlayer = false,
@@ -257,6 +257,7 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Luminous Sprite",
 			"Phoenix",
 			["Shroomie"] = 2,
 			["Cardinal"] = 2,
@@ -598,3 +599,4 @@ task.spawn(function()
         print('💎 Đã mua Enchanted Chest x2!')
     end
 end)
+
