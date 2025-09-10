@@ -259,8 +259,6 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Luminous Sprite",
 			"Phoenix",
-			["Shroomie"] = 2,
-			["Cardinal"] = 2,
 			"Cockatrice",
 			["Pixie"] = 5,
  			["Glimmering Sprite"] =5,
