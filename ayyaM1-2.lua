@@ -259,8 +259,6 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Luminous Sprite",
 			"Phoenix",
-			["Shroomie"] = 2,
-			["Cardinal"] = 2,
 			"Cockatrice",
 			["Pixie"] = 5,
  			["Glimmering Sprite"] =5,
@@ -599,5 +597,6 @@ task.spawn(function()
         print('💎 Đã mua Enchanted Chest x2!')
     end
 end)
+
 
 
