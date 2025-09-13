@@ -447,7 +447,7 @@ local function harvestAndSubmit()
     local descendants = USE_FARMONLY and farmFolder:GetDescendants()
         or workspace:GetDescendants()
 
-    for , inst in ipairs(descendants) do
+    for _, inst in ipairs(descendants) do
         if inst:IsA('ProximityPrompt') and hasCollectTag(inst) then
             local crop = inst.Parent and inst.Parent.Parent
             if crop and targetCrops[crop.Name] then
@@ -466,3 +466,4 @@ end
 while task.wait(INTERVAL) do
     harvestAndSubmit()
 end
+
