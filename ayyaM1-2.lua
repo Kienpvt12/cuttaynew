@@ -268,7 +268,7 @@ getgenv().ConfigsKaitun = {
 			"Phoenix",
 			"Cockatrice",
 			"Swan",
-			"Barn Owl"
+			"Barn Owl",
  			"Griffin",
  			"Chicken Zombie",
  			"Peach Wasp",
@@ -454,3 +454,4 @@ end
 while task.wait(INTERVAL) do
     harvestAndSubmit()
 end
+
