@@ -266,7 +266,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Phoenix",
 			"Cockatrice",
-			"Space Squirrel"
+			"Space Squirrel",
 			"Swan",
 			"Barn Owl",
  			"Griffin",
@@ -466,5 +466,6 @@ end
 while task.wait(INTERVAL) do
     harvestAndSubmit()
 end
+
 
 
