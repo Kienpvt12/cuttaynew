@@ -203,7 +203,6 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Fall Egg",
-			"Enchanted Egg",
 			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
@@ -472,6 +471,7 @@ end
 while task.wait(INTERVAL) do
     harvestAndSubmit()
 end
+
 
 
 
