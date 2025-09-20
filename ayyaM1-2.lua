@@ -140,7 +140,7 @@ getgenv().ConfigsKaitun = {
 		MaxMoney_Restocks = 5_000_000_000_000,
 		Shop = { -- un comment to buy
 			"Fell Egg",
-			"Red Panda"
+			"Red Panda",
 			"Enchanted Chest",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
@@ -350,3 +350,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
