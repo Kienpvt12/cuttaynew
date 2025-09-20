@@ -5,14 +5,14 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 90, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = false,
+	["Auto Rejoin"] = true,
 
-	["Rejoin When Update"] = true,
+	["Rejoin When Update"] = false,
 
-	["Auto Trade Pet"] = { -- not done yet bro dont use
+	["Auto Trade Pet"] = { -- beta idk it work or no
 		["Enabled"] = false, 
 		["Target"] =  { -- multi users
 			"username1",
@@ -23,9 +23,17 @@ getgenv().ConfigsKaitun = {
 		}
 	},
 
+	Ascend = {
+		Enabled = false,
+		Max_Rebirth_Money = 1_000_000_000_000,
+		Shop = {
+			"Egg Capacity"
+		}
+	},
+
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Until"] = 250,
+		["Limit"] = 400,
+		["Destroy Until"] = 400,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -78,7 +86,7 @@ getgenv().ConfigsKaitun = {
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
+			Custom = { -- any seed u need to buy
 				"Carrot",
 			}
 		},
@@ -97,113 +105,93 @@ getgenv().ConfigsKaitun = {
 				"Moon Mango",
 				"Bone Blossom",
 				"Fossilight",
-				"Strawberry",
 			}
 		}
 	},
 
 	["Seed Pack"] = {
 		Locked = {
-				"Enchanted Seed Pack",
+			["Enchanted Seed Pack"] = 10,
 		}
 	},
 
 	Events = {
 		["Fall Event"] = {
-			Minimum_Money = 10_000_000,
-		},
-		["Fairy Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = { -- top mean select first
-				"Enchanted Egg",
-				"Enchanted Seed Pack",
-				"FairyPoints",
-				"Pet Shard Glimmering",
-			    "Fairy Targeter",
-			},
-			Upgrade = {
-				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
-				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
-					"Glimmer Multiplier",
-					"Fairy Event Duration",
-				},
-				Limit = {
-					["Glimmer Multiplier"] = 1, -- max 10
-					["Loose Fairy Spawn Amount"] = 10, -- max 10
-					["Fairy Event Duration"] = 10, -- max 10
-					["Fairy Spawn Amount"] = 9, -- max 9
-				}
-			}
 		},
 		MaxMoney_Restocks = 5_000_000_000_000,
+		
 		Shop = { -- un comment to buy
-			"Fell Egg",
+			"Fall Egg",
+			"Red Panda",
+
 			"Enchanted Chest",
+			"Pet Shard Glimmering",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
-			"Drake",
-			"Wisp",
+			-- "Drake",
+			"Pixie Faern",
+			"Untold Bell",
 			"Luminous Sprite",
+			"Mutation Spray Luminous",
+			"Luminous Wand",
 
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
-			-- "Silver Fertilizer",
+			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			-- ["Spriggan"] = 8,
+			["Spriggan"] = 8,
 			-- Friend Shop
 			"Skyroot Chest",
-		},
-		Craft = {
-			"Fairy Net",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Anti Bee Egg",
-			"Sprout Egg",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Paradise Egg",
+			"Paradise Egg", 
 			"Rare Summer Egg", 
-			"Common Summer Egg",
-			"Pitcher Plant",
-			"Feijoa",
-			"Loquat",
+			"Common Summer Egg"
+		},
+		Craft = {
+			"Enchanted Chest",
+			"Fairy Net",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
+			"Anti Bee Egg",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
 
 	Gear = {
 		Buy = { 
-			"Harvest Tool",
 			"Master Sprinkler",
 			"Godly Sprinkler",
-			"Grandmaster Sprinkler",
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
 			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
+			"Harvest Tool",
 		},
 		Lock = {
-			"Grandmaster Sprinkler",
+			"Master Sprinkler",
 			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
 			"Lightning Rod",
-			"Harvest Tool",
-			"Level Up Lollipop",
-			"Medium Treat",
-			"Medium Toy",
 		},
 	},
 
 	Eggs = {
 		Place = {
 			"Fall Egg",
+			"Enchanted Egg",
 			"Sprout Egg",
+			"Gourmet Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
@@ -212,12 +200,13 @@ getgenv().ConfigsKaitun = {
 			"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			"Rare Egg",
+			"Bee Egg",
+			"Rare Summer Egg",
+			"Mythical Egg",
+			"Common Egg",
 		},
 		Buy = {
-			"Fall Egg",
 			"Bee Egg",
-			"Enchanted Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
@@ -227,8 +216,6 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 			"Uncommon Egg",
 			"Common Egg",
-			"Legendary Egg",
-			"Rare Egg",
 		}
 	},
 
@@ -260,7 +247,7 @@ getgenv().ConfigsKaitun = {
 			},
 		},
 		Unfavorite_AllPet = false,
-		Favorite_LockedPet = false,
+		Favorite_LockedPet = true,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Phoenix",
@@ -307,7 +294,6 @@ getgenv().ConfigsKaitun = {
 			"NAME oF SOMETHING",
 		}
 	},
-
 	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
 		UrlSeed = "xxx",
@@ -348,131 +334,3 @@ getgenv().ConfigsKaitun = {
 }
 License = "hLv5vGDrHC1cR2eyIaPkonhV0CmU0L12"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
-
-wait(4)
--- Script generated by SimpleSpy - credits to exx#9394
-local Rep = game:GetService("ReplicatedStorage")
-
-task.spawn(function()
-    while task.wait(1) do -- delay 1 giây để tránh kick
-        -- 🛒 Mua Fall Egg
-        local args1 = {
-            [1] = "Fall Egg",
-            [2] = 3
-        }
-        Rep.GameEvents.BuyEventShopStock:FireServer(unpack(args1))
-        print("🛒 Đã mua:", args1[1])
-
-        -- 🛒 Mua Space Squirrel
-        local args2 = {
-            [1] = "Space Squirrel",
-            [2] = 3
-        }
-        Rep.GameEvents.BuyEventShopStock:FireServer(unpack(args2))
-        print("🛒 Đã mua:", args2[1])
-    end
-end)
-
-local Players = game:GetService('Players')
-local Rep = game:GetService('ReplicatedStorage')
-local CollectionService = game:GetService('CollectionService')
-
-local localPlayer = Players.LocalPlayer
-local CollectRemote = Rep.GameEvents.Crops.Collect
-local SubmitAllRemote = Rep.GameEvents.FallMarketEvent.SubmitAllPlants
-
--- ⚙️ Delay và quét
-local USE_FARM_ONLY = true
-local FIRE_DELAY = 1
-local INTERVAL = 10
-
--- 📂 Farm folder
-local farmFolder
-pcall(function()
-    if
-        workspace:FindFirstChild('Farm')
-        and workspace.Farm:FindFirstChild('Farm')
-    then
-        farmFolder = workspace.Farm.Farm
-    end
-end)
-
--- 🏷️ Các loại cây cần thu hoạch
-local targetCrops = {
-    ['Mushroom'] = true,
-    ['Glowthorn'] = true,
-    ['Pepper'] = true,
-    ['Cacao'] = true,
-    ['Apple'] = true,
-    ['Wispwing'] = true,
-    ['Romanesco'] = true,
-    ['Elder Strawberry'] = true,
-    ['Burning Bud'] = true,
-    ['Giant Pinecone'] = true,
-    ['Corn'] = true,
-    ['Sugar Apple'] = true,
-    ['Ember Lily'] = true,
-    ['Dragon Fruit'] = true,
-    ['Sunbulb'] = true,
-    ['Orange Tulip'] = true,
-    ['Mango'] = true,
-    ['Cactus'] = true,
-    ['Beanstalk'] = true,
-    ['Lightshoot'] = true,
-    ['Grape'] = true,
-    ['Daffodil'] = true,
-    ['Aurora Vine'] = true,
-    ['Grand Tomato'] = true,
-    ['Maple Apple'] = true,
-    ['Princess Thorn'] = true,
-    ['Spiked Mango'] = true,
-    ['Pineapple'] = true,
-    ['King Cabbage'] = true,
-    ['Carnival Pumpkin'] = true,
-    ['Kniphofia'] = true,
-    ['Golden Peach'] = true,
-    ['Maple Resin'] = true,
-}
-
--- 🏷️ Kiểm tra tag thu hoạch
-local function hasCollectTag(obj)
-    if type(obj.HasTag) == 'function' then
-        local ok, res = pcall(function()
-            return obj:HasTag('CollectPrompt')
-        end)
-        if ok then
-            return res
-        end
-    end
-    return CollectionService:HasTag(obj, 'CollectPrompt')
-end
-
--- 🌱 Thu hoạch và nộp ngay sau mỗi lần
-local function harvestAndSubmit()
-    local descendants = USE_FARMONLY and farmFolder:GetDescendants()
-        or workspace:GetDescendants()
-
-    for _, inst in ipairs(descendants) do
-        if inst:IsA('ProximityPrompt') and hasCollectTag(inst) then
-            local crop = inst.Parent and inst.Parent.Parent
-            if crop and targetCrops[crop.Name] then
-                -- Thu hoạch
-                CollectRemote:FireServer({ crop })
-                task.wait(FIRE_DELAY)
-
-                -- Nộp ngay sau khi thu hoạch cây này
-                SubmitAllRemote:FireServer()
-            end
-        end
-    end
-end
-
--- 🔄 Loop
-while task.wait(INTERVAL) do
-    harvestAndSubmit()
-end
-
-
-
-
-
