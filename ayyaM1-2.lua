@@ -32,8 +32,8 @@ getgenv().ConfigsKaitun = {
 	},
 
 	["Limit Tree"] = {
-		["Limit"] = 400,
-		["Destroy Until"] = 400,
+		["Limit"] = 250,
+		["Destroy Until"] = 250,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -189,9 +189,8 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Fall Egg",
-			"Enchanted Egg",
-			"Sprout Egg",
 			"Gourmet Egg",
+			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Dinosaur Egg",
@@ -200,13 +199,12 @@ getgenv().ConfigsKaitun = {
 			"Night Egg",
 			"Bug Egg",
 			"Paradise Egg",
-			"Bee Egg",
-			"Rare Summer Egg",
-			"Mythical Egg",
-			"Common Egg",
+			"Rare Egg",
 		},
 		Buy = {
+			"Fall Egg",
 			"Bee Egg",
+			"Enchanted Egg",
 			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
@@ -216,6 +214,8 @@ getgenv().ConfigsKaitun = {
 			"Mythical Egg",
 			"Uncommon Egg",
 			"Common Egg",
+			"Legendary Egg",
+			"Rare Egg",
 		}
 	},
 
@@ -247,7 +247,7 @@ getgenv().ConfigsKaitun = {
 			},
 		},
 		Unfavorite_AllPet = false,
-		Favorite_LockedPet = true,
+		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Phoenix",
@@ -256,7 +256,7 @@ getgenv().ConfigsKaitun = {
 			"Wasp",
 			"Tarantula Hawk",
 			"Bee",
-			"Honey Bee",
+			"Honey Bee	",
 			"Butterfly",
 			"Disco Bee",
 			"Swan",
@@ -294,11 +294,11 @@ getgenv().ConfigsKaitun = {
 			"NAME oF SOMETHING",
 		}
 	},
+
 	Webhook = {
 		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
 		UrlSeed = "xxx",
 		PcName = "xxx",
-
 		Mention = "", -- discord id
 
 		Noti = {
