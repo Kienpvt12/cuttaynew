@@ -256,7 +256,7 @@ getgenv().ConfigsKaitun = {
 			"Wasp",
 			"Tarantula Hawk",
 			"Bee",
-			"Honey Bee	",
+			"Honey Bee",
 			"Butterfly",
 			"Disco Bee",
 			"Swan",
