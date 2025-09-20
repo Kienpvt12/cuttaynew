@@ -5,14 +5,14 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 60, -- cooldown to collect fruit
+	Collect_Cooldown = 90, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = true,
+	["Auto Rejoin"] = false,
 
-	["Rejoin When Update"] = false,
+	["Rejoin When Update"] = true,
 
-	["Auto Trade Pet"] = { -- beta idk it work or no
+	["Auto Trade Pet"] = { -- not done yet bro dont use
 		["Enabled"] = false, 
 		["Target"] =  { -- multi users
 			"username1",
@@ -20,14 +20,6 @@ getgenv().ConfigsKaitun = {
 		},
 		["Pet To Send"] = {
 			
-		}
-	},
-
-	Ascend = {
-		Enabled = false,
-		Max_Rebirth_Money = 1_000_000_000_000,
-		Shop = {
-			"Egg Capacity"
 		}
 	},
 
@@ -86,7 +78,7 @@ getgenv().ConfigsKaitun = {
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any seed u need to buy
+			Custom = { -- any fruit u need to place
 				"Carrot",
 			}
 		},
@@ -105,84 +97,107 @@ getgenv().ConfigsKaitun = {
 				"Moon Mango",
 				"Bone Blossom",
 				"Fossilight",
+				"Strawberry",
 			}
 		}
 	},
 
 	["Seed Pack"] = {
 		Locked = {
-			["Enchanted Seed Pack"] = 10,
+				"Enchanted Seed Pack",
 		}
 	},
 
 	Events = {
 		["Fall Event"] = {
+			Minimum_Money = 10_000_000,
+		},
+		["Fairy Event"] = {
 			Minimum_Money = 10_000_000, -- minimum money to start play this event
+			Rewards_Item = { -- top mean select first
+				"Enchanted Egg",
+				"Enchanted Seed Pack",
+				"FairyPoints",
+				"Pet Shard Glimmering",
+			    "Fairy Targeter",
+			},
+			Upgrade = {
+				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
+				Order = { -- top upgrade first, not put mean not upgrade
+					"Fairy Spawn Amount",
+					"Loose Fairy Spawn Amount",
+					"Glimmer Multiplier",
+					"Fairy Event Duration",
+				},
+				Limit = {
+					["Glimmer Multiplier"] = 1, -- max 10
+					["Loose Fairy Spawn Amount"] = 10, -- max 10
+					["Fairy Event Duration"] = 10, -- max 10
+					["Fairy Spawn Amount"] = 9, -- max 9
+				}
+			}
 		},
 		MaxMoney_Restocks = 5_000_000_000_000,
-		
 		Shop = { -- un comment to buy
-			"Fall Egg",
-			"Red Panda",
-
+			"Fell Egg",
+			"Red Panda"
 			"Enchanted Chest",
-			"Pet Shard Glimmering",
 			"Enchanted Egg",
 			"Enchanted Seed Pack",
-			-- "Drake",
-			"Pixie Faern",
-			"Untold Bell",
+			"Drake",
+			"Wisp",
 			"Luminous Sprite",
-			"Mutation Spray Luminous",
-			"Luminous Wand",
 
 			"Sprout Seed Pack",
 			"Sprout Egg",
 			-- "Mandrake",
-			"Silver Fertilizer",
+			-- "Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			["Spriggan"] = 8,
+			-- ["Spriggan"] = 8,
 			-- Friend Shop
 			"Skyroot Chest",
-			"Pet Shard GiantBean",
+		},
+		Craft = {
+			"Fairy Net",
+			"Enchanted Chest",
+			"Enchanted Egg",
+			"Anti Bee Egg",
+			"Sprout Egg",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Paradise Egg", 
+			"Paradise Egg",
 			"Rare Summer Egg", 
-			"Common Summer Egg"
-		},
-		Craft = {
-			"Enchanted Chest",
-			"Fairy Net",
-			"Enchanted Egg",
-			"Enchanted Seed Pack",
-			"Anti Bee Egg",
-			"Pet Shard GiantBean",
-			"Sprout Egg",
+			"Common Summer Egg",
+			"Pitcher Plant",
+			"Feijoa",
+			"Loquat",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
 
 	Gear = {
 		Buy = { 
+			"Harvest Tool",
 			"Master Sprinkler",
 			"Godly Sprinkler",
+			"Grandmaster Sprinkler",
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
 			"Level Up Lollipop",
 			"Medium Treat",
 			"Medium Toy",
-			"Harvest Tool",
 		},
 		Lock = {
-			"Master Sprinkler",
+			"Grandmaster Sprinkler",
 			"Godly Sprinkler",
-			"Advanced Sprinkler",
-			"Basic Sprinkler",
 			"Lightning Rod",
+			"Harvest Tool",
+			"Level Up Lollipop",
+			"Medium Treat",
+			"Medium Toy",
 		},
 	},
 
@@ -299,6 +314,7 @@ getgenv().ConfigsKaitun = {
 		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
 		UrlSeed = "xxx",
 		PcName = "xxx",
+
 		Mention = "", -- discord id
 
 		Noti = {
@@ -332,5 +348,5 @@ getgenv().ConfigsKaitun = {
 		}
 	},
 }
-License = "hLv5vGDrHC1cR2eyIaPkonhV0CmU0L12"
+License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
