@@ -5,14 +5,14 @@ getgenv().ConfigsKaitun = {
 
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 90, -- cooldown to collect fruit
+	Collect_Cooldown = 60, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = false,
 
-	["Rejoin When Update"] = true,
+	["Rejoin When Update"] = false,
 
-	["Auto Trade Pet"] = { -- not done yet bro dont use
+	["Auto Trade Pet"] = { -- beta idk it work or no
 		["Enabled"] = false, 
 		["Target"] =  { -- multi users
 			"username1",
@@ -23,9 +23,17 @@ getgenv().ConfigsKaitun = {
 		}
 	},
 
+	Ascend = {
+		Enabled = false,
+		Max_Rebirth_Money = 1_000_000_000_000,
+		Shop = {
+			"Egg Capacity"
+		}
+	},
+
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Until"] = 250,
+		["Limit"] = 400,
+		["Destroy Until"] = 400,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -38,47 +46,41 @@ getgenv().ConfigsKaitun = {
 			"Fossilight",
 			"Princess Thorn",
 			-- for the event
-			["Coconut"] = 10,
-			["Mushroom"] = 10,
-			["Glowthorn"] = 10,
-			["Pepper"] = 10,
-			["Cacao"] = 10,
-			["Apple"] = 10,
-			["Wispwing"] = 10,
-			["Romanesco"] = 10,
-			["Elder Strawberry"] = 10,
-			["Burning Bud"] = 10,
-			["Giant Pinecone"] = 10,
-			["Corn"] = 10,
-			["Sugar Apple"] = 10,
-			["Ember Lily"] = 10,
-			["Dragon Fruit"] = 10,
-			["Sunbulb"] = 10,
-			["Orange Tulip"] = 10,
-			["Mango"] = 10,
-			["Cactus"] = 10,
-			["Beanstalk"] = 10,
-			["Lightshoot"] = 10,
-			["Grape"] = 10,
-			["Daffodil"] = 10,
-			["Aurora Vine"] = 10,
-			["Grand Tomato"] = 10,
-			["Maple Apple"] = 10,
-			["Princess Thorn"] = 10,
-			["Spiked Mango"] = 10,
-			["Pineapple"] = 10,
-			["King Cabbage"] = 10,
-			["Carnival Pumpkin"] = 10,
-			["Kniphofia"] = 10,
-			["Golden Peach"] = 10,
-			["Maple Resin"] = 10,
+			Bamboo = 4,
+			Coconut = 15,
+			Mushroom = 4,
+			Glowthorn = 4,
+			Tomato = 15,
+			Pumpkin = 4,
+			Pepper = 4,
+			Cacao = 15,
+			Apple = 15,
+			Romanesco = 4,
+			["Elder Strawberry"] = 4,
+			["Burning Bud"] = 4,
+			["Giant Pinecone"] = 4,
+			Corn = 4,
+			["Sugar Apple"] = 4,
+			["Ember Lily"] = 4,
+			["Dragon Fruit"] = 15,
+			Sunbulb = 8,
+			["Orange Tulip"] = 4,
+			Blueberry = 15,
+			Watermelon = 4,
+			Mango = 15,
+			Cactus = 4,
+			Strawberry = 15,
+			Beanstalk = 4,
+			Lightshoot = 4,
+			Grape = 4,
+			Daffodil = 4,
 		}
 	},
 
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
+			Custom = { -- any seed u need to buy
 				"Carrot",
 			}
 		},
@@ -97,82 +99,38 @@ getgenv().ConfigsKaitun = {
 				"Moon Mango",
 				"Bone Blossom",
 				"Fossilight",
-				"Strawberry",
 			}
 		}
 	},
 
 	["Seed Pack"] = {
 		Locked = {
-				"Enchanted Seed Pack",
+			["Enchanted Seed Pack"] = 10,
 		}
 	},
 
 	Events = {
-		["Fall Event"] = {
-			Minimum_Money = 10_000_000,
-		},
-		["Fairy Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = { -- top mean select first
-				"Enchanted Egg",
-				"Enchanted Seed Pack",
-				"FairyPoints",
-				"Pet Shard Glimmering",
-			    "Fairy Targeter",
-			},
-			Upgrade = {
-				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
-				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
-					"Glimmer Multiplier",
-					"Fairy Event Duration",
-				},
-				Limit = {
-					["Glimmer Multiplier"] = 1, -- max 10
-					["Loose Fairy Spawn Amount"] = 10, -- max 10
-					["Fairy Event Duration"] = 10, -- max 10
-					["Fairy Spawn Amount"] = 9, -- max 9
-				}
-			}
-		},
 		MaxMoney_Restocks = 5_000_000_000_000,
+		
 		Shop = { -- un comment to buy
-			"Fell Egg",
-			"Red Panda",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Enchanted Seed Pack",
-			"Drake",
-			"Wisp",
-			"Luminous Sprite",
-
-			"Sprout Seed Pack",
-			"Sprout Egg",
-			-- "Mandrake",
-			-- "Silver Fertilizer",
-			-- "Canary Melon",
-			-- "Amberheart",
-			-- ["Spriggan"] = 8,
-			-- Friend Shop
-			"Skyroot Chest",
-		},
-		Craft = {
-			"Fairy Net",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Anti Bee Egg",
-			"Sprout Egg",
+			"Evo Beetroot I",
+			"Evo Blueberry I",
+			"Evo Pumpkin I",
+			"Evo Mushroom I",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
-			"Paradise Egg",
+			"Paradise Egg", 
 			"Rare Summer Egg", 
-			"Common Summer Egg",
-			"Pitcher Plant",
-			"Feijoa",
-			"Loquat",
+			"Common Summer Egg"
+		},
+		Craft = {
+			"Enchanted Chest",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
+			"Anti Bee Egg",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -203,6 +161,7 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Jungle Egg",
 			"Fall Egg",
 			"Gourmet Egg",
 			"Sprout Egg",
@@ -217,6 +176,7 @@ getgenv().ConfigsKaitun = {
 			"Rare Egg",
 		},
 		Buy = {
+			"Jungle Egg",
 			"Fall Egg",
 			"Bee Egg",
 			"Enchanted Egg",
@@ -265,6 +225,9 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Tiger",
+			"Chimpanzee",
+			"Hummingbird",
 			"Phoenix",
 			"Red Panda",
 			"Cockatrice",
@@ -312,7 +275,7 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Webhook = {
-		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
+		UrlPet = "xxx",
 		UrlSeed = "xxx",
 		PcName = "xxx",
 
@@ -328,11 +291,11 @@ getgenv().ConfigsKaitun = {
 				"Idk"
 			},
 			Pets = {
-				"Swan",
 				"Phoenix",
+				"Cockatrice",
 				"Golden Goose",
 				"French Fry Ferret",
-				"Cockatrice",
+				"Corrupted Kitsune",
 				"Kitsune",
 				"Spinosaurus",
 				"T-Rex",
@@ -351,5 +314,3 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
-
-
