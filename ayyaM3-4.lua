@@ -150,8 +150,7 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Jungle Egg",
-			"Fall Egg",
-			"Gourmet Egg",
+			"Bug Egg",
 			"Sprout Egg",
 			"Zen Egg",
 			"Primal Egg",
@@ -159,7 +158,6 @@ getgenv().ConfigsKaitun = {
 			"Oasis Egg",
 			"Anti Bee Egg",
 			"Night Egg",
-			"Bug Egg",
 			"Paradise Egg",
 			"Rare Egg",
 		},
@@ -302,3 +300,7 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
+
+
+
