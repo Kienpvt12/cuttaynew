@@ -207,6 +207,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Chinchilla",
 			"Idol Chipmunk",
+			["Chubby Chipmunk"] = 8,
 			"Fortune Squirrel",
 			"Tiger",
 			"Mizuchi",
@@ -230,7 +231,7 @@ getgenv().ConfigsKaitun = {
  			"Golden Goose",
  			["Rooster"] = 5,
  			"Lobster Thermidor",
- 			["Sunny-Side Chicken"] = 30,
+ 			["Sunny-Side Chicken"] = 20,
  			"French Fry Ferret",
  			"Kodama",
  			"Corrupted Kitsune",
