@@ -209,6 +209,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Chinchilla",
 			"Idol Chipmunk",
+			"Fortune Squirrel",
 			"Tiger",
 			"Mizuchi",
 			"Chimpanzee",
