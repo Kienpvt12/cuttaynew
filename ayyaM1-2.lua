@@ -231,7 +231,7 @@ getgenv().ConfigsKaitun = {
  			"Golden Goose",
  			["Rooster"] = 5,
  			"Lobster Thermidor",
- 			["Sunny-Side Chicken"] = 30,
+ 			["Sunny-Side Chicken"] = 20,
  			"French Fry Ferret",
  			"Kodama",
  			"Corrupted Kitsune",
@@ -298,4 +298,5 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
