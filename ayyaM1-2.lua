@@ -205,6 +205,8 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Chinchilla",
+			"Idol Chipmunk",
 			"Tiger",
 			"Mizuchi",
 			"Chimpanzee",
@@ -294,6 +296,7 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
 
 
