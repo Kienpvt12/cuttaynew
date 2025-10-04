@@ -45,6 +45,8 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
+			["Acorn"] = 5,
+			["Persimmon"] =5,
 			-- for the event
 			["Evo Beetroot I"] = 10,
 			["Evo Blueberry I"] = 10,
@@ -296,3 +298,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
