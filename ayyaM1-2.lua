@@ -207,6 +207,7 @@ getgenv().ConfigsKaitun = {
 		Locked = {
 			"Chinchilla",
 			"Idol Chipmunk",
+			["Chubby Chipmunk"] = 8,
 			"Fortune Squirrel",
 			"Tiger",
 			"Mizuchi",
@@ -297,3 +298,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
