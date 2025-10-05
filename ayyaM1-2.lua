@@ -197,7 +197,7 @@ getgenv().ConfigsKaitun = {
 			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
 						["Chubby Chipmunk"] = {8, 100, 1},
-                		["Sunny-Side Chicken"] = { 8, 100, 2 },
+                		["Sunny-Side Chicken"] = { 5, 100, 2 },
                 		["Rooster"] = { 5, 100, 6 },
 			},
 		},
@@ -206,7 +206,7 @@ getgenv().ConfigsKaitun = {
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"Chinchilla",
-			"Idol Chipmunk",
+			["Idol Chipmunk"] =2,
 			["Chubby Chipmunk"] = 8,
 			"Fortune Squirrel",
 			"Tiger",
@@ -219,7 +219,7 @@ getgenv().ConfigsKaitun = {
 			"Wasp",
 			"Tarantula Hawk",
 			"Bee",
-			"Honey Bee	",
+			"Honey Bee",
 			"Butterfly",
 			"Disco Bee",
 			"Swan",
@@ -231,7 +231,7 @@ getgenv().ConfigsKaitun = {
  			"Golden Goose",
  			["Rooster"] = 5,
  			"Lobster Thermidor",
- 			["Sunny-Side Chicken"] = 20,
+ 			["Sunny-Side Chicken"] = 15,
  			"French Fry Ferret",
  			"Kodama",
  			"Corrupted Kitsune",
@@ -298,6 +298,7 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
 
 
