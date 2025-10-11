@@ -151,12 +151,11 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
-			"Jungle Egg",
+			"Spooky Egg",
 			"Bug Egg",
 			"Anti Bee Egg",
 			"Paradise Egg",
 			"Rare Egg",
-			"Spooky Egg",
 		},
 		Buy = {
 			"Jungle Egg",
@@ -298,3 +297,4 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
