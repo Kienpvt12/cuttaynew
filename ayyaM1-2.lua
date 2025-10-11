@@ -164,16 +164,10 @@ getgenv().ConfigsKaitun = {
 			"Spooky Egg",
 			"Bee Egg",
 			"Enchanted Egg",
-			"Oasis Egg",
 			"Paradise Egg",
 			"Anti Bee Egg",
-			"Night Egg",
 			"Rare Summer Egg",
 			"Bug Egg",
-			"Mythical Egg",
-			"Uncommon Egg",
-			"Common Egg",
-			"Legendary Egg",
 			"Rare Egg",
 		}
 	},
@@ -304,8 +298,3 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
-
-
-
-
-
