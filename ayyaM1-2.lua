@@ -156,10 +156,12 @@ getgenv().ConfigsKaitun = {
 			"Anti Bee Egg",
 			"Paradise Egg",
 			"Rare Egg",
+			"Spooky Egg",
 		},
 		Buy = {
 			"Jungle Egg",
 			"Fall Egg",
+			"Spooky Egg",
 			"Bee Egg",
 			"Enchanted Egg",
 			"Oasis Egg",
@@ -205,8 +207,12 @@ getgenv().ConfigsKaitun = {
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
+			"Headless Horseman",
+			["Black Cat"] = 5,
+			["Spider"] = 2,
+			["Bat"] = 2,
 			"Chinchilla",
-			["Idol Chipmunk"] =2,
+			["Idol Chipmunk"] = 2,
 			["Chubby Chipmunk"] = 8,
 			"Fortune Squirrel",
 			"Tiger",
@@ -216,7 +222,7 @@ getgenv().ConfigsKaitun = {
 			"Red Panda",
 			"Cockatrice",
 			"Space Squirrel",
-			"Wasp",
+			["Wasp"] = 5,
 			"Tarantula Hawk",
 			"Bee",
 			"Honey Bee",
@@ -298,6 +304,7 @@ getgenv().ConfigsKaitun = {
 }
 License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
 
 
