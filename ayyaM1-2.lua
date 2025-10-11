@@ -4,7 +4,7 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Spooky Egg", "Reaper" },
+    BUY_EVENT_SHOP = { "Spooky Egg", "Reaper", ["Ghost Bear"] = 5 },
     
     MAX_PLANTS = 100,
     DESTROY_UNTIL_MIN_PLANTS = 80,
@@ -36,7 +36,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 7,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { ["Sunny-Side Chicken"] = 5 , ["Rooster"] = 5, ["Wasp"] = 1 },
+    EQUIP_PETS = { ["Sunny-Side Chicken"] = 5 , ["Rooster"] = 5, ["Ghost Bear"] = 5 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
@@ -56,3 +56,4 @@ getgenv().gagConfig = {
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c916e5b90dc37c71ecf1ec00dfce3d5d.lua"))()
+
