@@ -11,7 +11,7 @@ settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
 settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level04
 settings().Rendering.GraphicsMode = 9
 
-script_key = "gBgCmAPZTSmdqGHMSmmUdgFuEcELDZWK";
+script_key = "CaVTYOQOgSbowuLABkWLFARzwwLmgZGV";
 getgenv().GGFX_MODE = 1
 getgenv().GDO_HALLOWEEN_WORLD = true
 getgenv().GHALLOWEEN_WORLD_ALLOW_WORSE_EGG_PLACEMENT = true
@@ -52,3 +52,4 @@ getgenv().GMAIL_ITEMS = {
 ["Brainrot egg"] = {Class = "Egg", Id = "Exclusive Egg 56", MinAmount = 1},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6e75890d2e36b4613270666c4f5ccab3.lua"))()
+
