@@ -37,7 +37,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 7,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { { ["Sunny-Side Chicken"] = 4 , ["Hotdog Daschund"] = 4 , ["Blood Kiwi"] = 8 , ["Rooster"] = 8 },
+    EQUIP_PETS = { ["Sunny-Side Chicken"] = 4 , ["Hotdog Daschund"] = 4 , ["Blood Kiwi"] = 8 , ["Rooster"] = 8 },
     LEVELUP_LOLLIPOP_MIN_LEVEL = 90,
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
@@ -57,4 +57,5 @@ getgenv().gagConfig = {
     GIFT_PET = {},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
+
 
