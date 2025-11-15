@@ -33,11 +33,11 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { ["Orange Tabby"] = 2, "Ruby Squid", "Diamond Panther", "Elephant", "Lich", "Mummy", "Hex Serpent", ["Ghost Bear"] = 4 , "Headless Horseman", "Reaper", "Chinchilla", "Chubby Chipmunk", "Mizuchi", "Tiger", "Red Panda", "Barn Owl", "Swan", ["Space Squirrel"] = 2 , "Phoenix", "Cockatrice", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Kitsune", "Koi", "Bald Eagle",  "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Pack Bee",  "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Chicken Zombie", ["Blood Kiwi"] = 2, "Capybara" , ["Starfish"] = 2, ["Rooster"] = 2, ["Chicken"] = 8 },
+    KEEP_PETS = { ["Orange Tabby"] = 2, ["Goblin Miner"] = 2, "Ruby Squid", "Diamond Panther", "Elephant", "Lich", "Mummy", "Hex Serpent", ["Ghost Bear"] = 4 , "Headless Horseman", "Reaper", "Chinchilla", "Chubby Chipmunk", "Mizuchi", "Tiger", "Red Panda", "Barn Owl", "Swan", ["Space Squirrel"] = 2 , "Phoenix", "Cockatrice", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Kitsune", "Koi", "Bald Eagle",  "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Pack Bee",  "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Chicken Zombie", ["Blood Kiwi"] = 2, "Capybara" , ["Starfish"] = 2, ["Rooster"] = 2, ["Chicken"] = 8 },
     KEEP_PETS_WEIGHT = 7,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { ["Sunny-Side Chicken"] = 4 , ["Hotdog Daschund"] = 4 , ["Blood Kiwi"] = 8 , ["Rooster"] = 8 },
+    EQUIP_PETS = { ["Sunny-Side Chicken"] = 4 , ["Goblin Miner"] = 2 , ["Blood Kiwi"] = 8 , ["Rooster"] = 8 },
     LEVELUP_LOLLIPOP_MIN_LEVEL = 90,
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
@@ -57,6 +57,7 @@ getgenv().gagConfig = {
     GIFT_PET = {},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
+
 
 
 
