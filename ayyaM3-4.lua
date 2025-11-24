@@ -1,7 +1,13 @@
 setfpscap(5)
+
 task.wait(10) -- DO NOT remove this wait, it's against double counts.
 -- INSERT YOUR CONFIG HERE --
+getgenv().GLOOTBOXES = {"Locked Hype Egg"}
 getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GRANK_FIRST = true
+getgenv().GRANK_TO = 5
+getgenv().GREBIRTH_TO = 4
+getgenv().GZONE_TO = 101 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
 getgenv().GHALLOWEEN_JOIN_LOCAL = true
 getgenv().GHALLOWEEN_OPEN_HOUSE_6 = false
 getgenv().GDO_HALLOWEEN_WORLD = true
@@ -30,6 +36,7 @@ getgenv().GMAIL_ITEMS = {
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "2m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
 ["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
 ["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
