@@ -4,10 +4,6 @@ task.wait(10) -- DO NOT remove this wait, it's against double counts.
 -- INSERT YOUR CONFIG HERE --
 getgenv().GLOOTBOXES = {"Locked Hype Egg"}
 getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals
-getgenv().GRANK_FIRST = true
-getgenv().GRANK_TO = 5
-getgenv().GREBIRTH_TO = 4
-getgenv().GZONE_TO = 101 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
 getgenv().GHALLOWEEN_JOIN_LOCAL = true
 getgenv().GHALLOWEEN_OPEN_HOUSE_6 = false
 getgenv().GDO_HALLOWEEN_WORLD = true
