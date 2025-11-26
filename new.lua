@@ -1,353 +1,45 @@
-getgenv().ConfigsKaitun = {
-	Beta_Fix_Data_Sync = true,
+setfpscap(5)
 
-	NoDeletePlayer = false,
-
-	["Block Pet Gift"] = true,
-
-	Collect_Cooldown = 90, -- cooldown to collect fruit
-
-	["Low Cpu"] = true,
-	["Auto Rejoin"] = false,
-
-	["Rejoin When Update"] = true,
-
-	["Auto Trade Pet"] = { -- not done yet bro dont use
-		["Enabled"] = false, 
-		["Target"] =  { -- multi users
-			"username1",
-			"username2",
-		},
-		["Pet To Send"] = {
-			
-		}
-	},
-
-	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Until"] = 250,
-
-		["Safe Tree"] = {
-			"Moon Blossom",
-			"Bone Blossom",
-			"Moon Melon",
-			"Maple Apple",
-			"Moon Mango",
-			"Dragon Pepper",
-			"Elephant Ears",
-			"Fossilight",
-			"Princess Thorn",
-			-- for the event
-			["Coconut"] = 10,
-			["Mushroom"] = 10,
-			["Glowthorn"] = 10,
-			["Pepper"] = 10,
-			["Cacao"] = 10,
-			["Apple"] = 10,
-			["Wispwing"] = 10,
-			["Romanesco"] = 10,
-			["Elder Strawberry"] = 10,
-			["Burning Bud"] = 10,
-			["Giant Pinecone"] = 10,
-			["Corn"] = 10,
-			["Sugar Apple"] = 10,
-			["Ember Lily"] = 10,
-			["Dragon Fruit"] = 10,
-			["Sunbulb"] = 10,
-			["Orange Tulip"] = 10,
-			["Mango"] = 10,
-			["Cactus"] = 10,
-			["Beanstalk"] = 10,
-			["Lightshoot"] = 10,
-			["Grape"] = 10,
-			["Daffodil"] = 10,
-			["Aurora Vine"] = 10,
-			["Grand Tomato"] = 10,
-			["Maple Apple"] = 10,
-			["Princess Thorn"] = 10,
-			["Spiked Mango"] = 10,
-			["Pineapple"] = 10,
-			["King Cabbage"] = 10,
-			["Carnival Pumpkin"] = 10,
-			["Kniphofia"] = 10,
-			["Golden Peach"] = 10,
-			["Maple Resin"] = 10,
-		}
-	},
-
-	Seed = {
-		Buy = {
-			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
-				"Carrot",
-			}
-		},
-		Place = {
-			Mode = "Lock", -- Select , Lock
-			Select = {
-				"Carrot"
-			},
-			Lock = {
-				"Maple Apple",
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
-				"Moon Melon",
-				"Easter Egg",
-				"Moon Mango",
-				"Bone Blossom",
-				"Fossilight",
-				"Strawberry",
-			}
-		}
-	},
-
-	["Seed Pack"] = {
-		Locked = {
-				"Enchanted Seed Pack",
-		}
-	},
-
-	Events = {
-		["Fall Event"] = {
-			Minimum_Money = 10_000_000,
-		},
-		["Fairy Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
-			Rewards_Item = { -- top mean select first
-				"Enchanted Egg",
-				"Enchanted Seed Pack",
-				"FairyPoints",
-				"Pet Shard Glimmering",
-			    "Fairy Targeter",
-			},
-			Upgrade = {
-				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
-				Order = { -- top upgrade first, not put mean not upgrade
-					"Fairy Spawn Amount",
-					"Loose Fairy Spawn Amount",
-					"Glimmer Multiplier",
-					"Fairy Event Duration",
-				},
-				Limit = {
-					["Glimmer Multiplier"] = 1, -- max 10
-					["Loose Fairy Spawn Amount"] = 10, -- max 10
-					["Fairy Event Duration"] = 10, -- max 10
-					["Fairy Spawn Amount"] = 9, -- max 9
-				}
-			}
-		},
-		MaxMoney_Restocks = 5_000_000_000_000,
-		Shop = { -- un comment to buy
-			"Fell Egg",
-			"Red Panda",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Enchanted Seed Pack",
-			"Drake",
-			"Wisp",
-			"Luminous Sprite",
-
-			"Sprout Seed Pack",
-			"Sprout Egg",
-			-- "Mandrake",
-			-- "Silver Fertilizer",
-			-- "Canary Melon",
-			-- "Amberheart",
-			-- ["Spriggan"] = 8,
-			-- Friend Shop
-			"Skyroot Chest",
-		},
-		Craft = {
-			"Fairy Net",
-			"Enchanted Chest",
-			"Enchanted Egg",
-			"Anti Bee Egg",
-			"Sprout Egg",
-		},
-		["Traveling Shop"] = {
-			"Bee Egg",
-			"Paradise Egg",
-			"Rare Summer Egg", 
-			"Common Summer Egg",
-			"Pitcher Plant",
-			"Feijoa",
-			"Loquat",
-		},
-		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
-	},
-
-	Gear = {
-		Buy = { 
-			"Harvest Tool",
-			"Master Sprinkler",
-			"Godly Sprinkler",
-			"Grandmaster Sprinkler",
-			"Advanced Sprinkler",
-			"Basic Sprinkler",
-			"Lightning Rod",
-			"Level Up Lollipop",
-			"Medium Treat",
-			"Medium Toy",
-		},
-		Lock = {
-			"Grandmaster Sprinkler",
-			"Godly Sprinkler",
-			"Lightning Rod",
-			"Harvest Tool",
-			"Level Up Lollipop",
-			"Medium Treat",
-			"Medium Toy",
-		},
-	},
-
-	Eggs = {
-		Place = {
-			"Fall Egg",
-			"Gourmet Egg",
-			"Sprout Egg",
-			"Zen Egg",
-			"Primal Egg",
-			"Dinosaur Egg",
-			"Oasis Egg",
-			"Anti Bee Egg",
-			"Night Egg",
-			"Bug Egg",
-			"Paradise Egg",
-			"Rare Egg",
-		},
-		Buy = {
-			"Fall Egg",
-			"Bee Egg",
-			"Enchanted Egg",
-			"Oasis Egg",
-			"Paradise Egg",
-			"Anti Bee Egg",
-			"Night Egg",
-			"Rare Summer Egg",
-			"Bug Egg",
-			"Mythical Egg",
-			"Uncommon Egg",
-			"Common Egg",
-			"Legendary Egg",
-			"Rare Egg",
-		}
-	},
-
-	Pets = {
-		["Auto Feed"] = true,
-		MutationPet = {
-			["Rooster"] = { "Glimmering" },
-			["Sunny-Side Chicken"] = { "Glimmering" },
-			["Glimmering Sprite"] = { "Glimmering" },
-			["Brown Mouse"] = { "Glimmering" },
-			["Grey Mouse"] = { "Glimmering" },
-			["Squirrel"] = { "Glimmering" },
-		},
-		["Start Delete Pet At"] = 40,
-		["Upgrade Slot"] = {
-			["Pet"] = {
-				["Starfish"] = { 5, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
-				["Brown Mouse"] = { 1, 100 },
-				["Squirrel"] = { 1, 100 }, 
-				["Grey Mouse"] = { 1, 100 },
-			},
-			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
-			["Equip When Done"] = {
-                		["Sunny-Side Chicken"] = { 8, 100, 2 },
-                		["Starfish"] = { 1, 100, 3 },
-                		["Brown Mouse"] = { 1, 100, 4 },
-                		["Grey Mouse"] = { 1, 100, 5 },
-                		["Rooster"] = { 5, 100, 6 },
-			},
-		},
-		Unfavorite_AllPet = false,
-		Favorite_LockedPet = false,
-		Locked_Pet_Age = 60, -- pet that age > 60 will lock
-		Locked = {
-			"Phoenix",
-			"Red Panda",
-			"Cockatrice",
-			"Space Squirrel",
-			"Wasp",
-			"Tarantula Hawk",
-			"Bee",
-			"Honey Bee	",
-			"Butterfly",
-			"Disco Bee",
-			"Swan",
-			"Barn Owl",
- 			"Griffin",
- 			"Chicken Zombie",
- 			"Peach Wasp",
- 			"Lemon Lion",
- 			"Golden Goose",
- 			["Rooster"] = 5,
- 			"Lobster Thermidor",
- 			["Sunny-Side Chicken"] = 30,
- 			"French Fry Ferret",
- 			"Kodama",
- 			"Corrupted Kitsune",
- 			"Nihonzaru",
- 			["Starfish"] = 6,
- 			["Capybara"] = 1,
- 			["Seal"] = 3,
- 			"Kitsune",
- 			"Blood Kiwi",
- 			"Disco Bee",
- 			"Raccoon",
- 			"Queen Bee",
- 			"Dragonfly",
- 			"Butterfly",
- 			"Mimic Octopus",
- 			"Red Fox",
-		},
-		LockPet_Weight = 7, -- if Weight >= 10 they will locked
-		Ignore_Pet_Weight = {
-			"NAME oF PET THAT U DONT NEED LOCK",
-		},
-		Instant_Sell = {
-			"NAME oF SOMETHING",
-		}
-	},
-
-	Webhook = {
-		UrlPet = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
-		UrlSeed = "xxx",
-		PcName = "xxx",
-
-		Mention = "", -- discord id
-
-		Noti = {
-			Seeds = {
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
-			},
-			SeedPack = {
-				"Idk"
-			},
-			Pets = {
-				"Swan",
-				"Phoenix",
-				"Golden Goose",
-				"French Fry Ferret",
-				"Cockatrice",
-				"Kitsune",
-				"Spinosaurus",
-				"T-Rex",
-				"Disco Bee",
-				"Butterfly",
-				"Mimic Octopus",
-				"Queen Bee",
-				"Fennec Fox",
-				"Dragonfly",
-				"Raccoon",
-				"Red Fox",
-			},
-			Pet_Weight_Noti = true,
-		}
-	},
+task.wait(10) -- DO NOT remove this wait, it's against double counts.
+-- INSERT YOUR CONFIG HERE --
+getgenv().GLOOTBOXES = {"Locked Hype Egg"}
+getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GHALLOWEEN_JOIN_LOCAL = true
+getgenv().GHALLOWEEN_OPEN_HOUSE_6 = false
+getgenv().GDO_HALLOWEEN_WORLD = true
+getgenv().GHALLOWEEN_WORLD_BUY_FROM_SPECIFIC_HOUSE = {1,2,3}
+getgenv().GHALLOWEEN_WORLD_RECIPES_TO_DO = {1,2,3,4,5}
+getgenv().GKEEP_CURRENCY_FOR_CRAFTS = "20m"
+getgenv().GALLOW_HOPPING = true
+getgenv().GHOP_ON_STAFF = true
+getgenv().GHALLOWEEN_WORLD_BUY_FROM_HOUSES_BELOW = false
+getgenv().GHALLOWEEN_WORLD_HATCH_SPOTS = 1
+getgenv().GHALLOWEEN_WORLD_ALLOW_WORSE_EGG_PLACEMENT = true
+getgenv().GHALLOWEEN_WORLD_USE_BOOSTS = true
+getgenv().GEVENT_UPGRADES = {
+    'HalloweenCandyMultiplier',
+    'HalloweenEggLuck',
+    'HalloweenTrickOrTreatLuck',
+    'HalloweenMoreDiamonds',
+    'HalloweenMoreWitchHats',
+    'HalloweenHugeLuck',
+    'HalloweenTitanicLuck',
+} --you can put the comment symbols (these 2 dashes): -- in front of the ones you don't want to upgrade
+getgenv().GWEBHOOK_USERID = "975746409007579207"
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v"
+getgenv().GMAIL_RECEIVERS = {"TraiCayBlox380695"} -- for Huges and mailrules.
+getgenv().GMAIL_ITEMS = {
+["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "2m", MinAmount = "2m"}, -- mail diamonds, to enable lower MinAmount..
+["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
+["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
+["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
+["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
+["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
+["Secret pet4"] = {Class = "Pet", Id = "Yellow Lucky Block", MinAmount = 1, AllVariants = true},
+["Brainrot egg"] = {Class = "Egg", Id = "Exclusive Egg 56", MinAmount = 1},
+["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
 }
-License = "dJSwsjHryaty4NoGBypJDqY9tQj0z3Fj"
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
