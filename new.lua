@@ -1,9 +1,10 @@
 setfpscap(5)
-
+script_key = "YLDrtOSHZIzLtvLzBAUgIlcCJPeZuJwc";
 task.wait(10) -- DO NOT remove this wait, it's against double counts.
 -- INSERT YOUR CONFIG HERE --
 getgenv().GLOOTBOXES = {"Locked Hype Egg"}
 getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GZONE_TO = 1 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
 getgenv().GHALLOWEEN_JOIN_LOCAL = true
 getgenv().GHALLOWEEN_OPEN_HOUSE_6 = false
 getgenv().GDO_HALLOWEEN_WORLD = true
@@ -30,7 +31,7 @@ getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1288486290794217565/
 getgenv().GMAIL_RECEIVERS = {"TraiCayBlox380695"} -- for Huges and mailrules.
 getgenv().GMAIL_ITEMS = {
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "2m", MinAmount = "2m"}, -- mail diamonds, to enable lower MinAmount..
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "2m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
 ["Hype Egg"] = {Class = "Lootbox", Id = "Hype Egg", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
@@ -42,4 +43,4 @@ getgenv().GMAIL_ITEMS = {
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
 }
 getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
