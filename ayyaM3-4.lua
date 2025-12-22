@@ -1,4 +1,4 @@
-c_G.FishItConfig = _G.FishItConfig or {
+_G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
         ["Auto Perfect"] = true,
     },
