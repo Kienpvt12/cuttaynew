@@ -70,6 +70,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Roll Enchant"] = false,
         ["Enchant List"] = {
             "Prismatic I",
+            "SECRET Hunter",
         },
         ["Second Enchant"] = false,
         ["Allowed Sacrifice"] = {
@@ -78,6 +79,7 @@ _G.FishItConfig = _G.FishItConfig or {
         },
         ["Second Enchant List"] = {
             "Prismatic I",
+            "SECRET Hunter",
         },
         ["Minimum Rod"] = "Ghostfinn Rod",
     },
@@ -118,3 +120,4 @@ _G.FishItConfig = _G.FishItConfig or {
 }
 script_key="4C77E8940C9C782E0894E61DA4671B38";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua"))()
+
