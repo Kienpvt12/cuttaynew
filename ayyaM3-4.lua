@@ -64,6 +64,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Enchant List"] = {
             "Prismatic I",
+            "SECRET Hunter",
         },
     },
     ["Bait List"] = {
