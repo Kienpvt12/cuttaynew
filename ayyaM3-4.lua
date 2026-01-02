@@ -37,7 +37,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
         ["Auto Sending"] = true,
         ["Category"] = {"Secret"},
-
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1288486290794217565/GtYWtRVhHU_Eq6XXyF0szbG3Ox3YRjUx2u6q4Ow9gvv083CwWUMT6zOY7SUbStQorr0v",
     },
     ["Weather"] = {
@@ -63,7 +62,6 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Enchant List"] = {
             "Prismatic I",
-            "SECRET Hunter",
         },
     },
     ["Bait List"] = {
